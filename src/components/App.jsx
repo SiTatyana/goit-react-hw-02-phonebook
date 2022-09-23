@@ -1,3 +1,6 @@
+import React from "react";
+import Contacts from "./Contacts/Contacts";
+
 export const App = () => {
   return (
     <div
@@ -6,11 +9,11 @@ export const App = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: 40,
+        fontSize: 23,
         color: '#010101'
       }}
     >
-      React homework template
+      <Contacts />
     </div>
   );
 };
