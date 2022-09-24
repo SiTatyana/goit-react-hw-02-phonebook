@@ -6,7 +6,6 @@ import {PhonebookForm, PhonebookHeader, PhonebookLabel, PhonebookInput, Phoneboo
 export default class Form extends Component {
 
     state ={
-        contacts:[],
         name: '',
         number:'',
     }
