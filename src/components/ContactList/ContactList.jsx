@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import{ContactsItem, ContactsList, ContactsDiv,ContactsSpan} from './ContactList.styled';
 
 export default function ContactList ({items, removeContact}) {
@@ -16,4 +17,12 @@ export default function ContactList ({items, removeContact}) {
     <ContactsList>{elements}</ContactsList>
     </>
   )
+}
+
+ContactList.propTypes = {
+elements: PropTypes.arrayOf(PropTypes.shape({
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string,
+  number: PropTypes.string,
+}))
 }
